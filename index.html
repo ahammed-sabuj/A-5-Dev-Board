@@ -18,7 +18,7 @@
         <div>
             <div class="flex gap-2">
                 <img class="w-full h-4 my-auto" src="assets/checkbox.png" alt="">
-                <p class="font-bold">23</p>
+                <p id="total-task" class="font-bold">23</p>
                 <img class="w-full h-5 my-auto" src="assets/theme-btn.png" alt="">
             </div>
         </div>
@@ -44,7 +44,7 @@
                             <img class="w-full h-4" src="assets/checkbox.png" alt="">
                         </div>
                         <div class="my-auto">
-                            <p class="text-xs text-gray-600">Wed, <br> <span class="text-sm text-black font-bold">Mar 24 2025</span ></p>   
+                            <p id="current-date" class="text-xs text-gray-600"><span id="day">Wed,</span> <br> <span class="text-sm text-black font-bold">Mar 24 2025</span ></p>   
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                         <p class="text-xs text-gray-500">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     </div>
                     <div class="flex justify-between mt-4">
-                        <div>
+                        <div class="mt-3">
                             <p class="ml-5"><span class="text-xs text-gray-500">Deadline</span> <br><span class="text-xs font-bold">21 March,2025</span></p>
                         </div>
                         <div class="flex justify-center items-center">
@@ -159,15 +159,22 @@
                 </div>
             </div>
         </section>
-        <section class="col-span-1 bg-white rounded-md">
-            <div class=" flex justify-center pt-5">
-                <img class="w-4" src="assets/activity.png" alt="">
+        <section id="history" class="col-span-1 bg-white rounded-md">
+            <div class=" flex justify-center pt-5 gap-1">
+                <img class="w-5" src="assets/activity.png" alt="">
+                <h1 class="text-sm font-bold">Activity log</h1>
             </div>
             <div class="flex justify-center">
-                <button class="bg-sky-900 text-white text-sm font-semibold rounded-md px-3 py-1 mt-4">Clear History</button>
+                <button id="clear-btn" class="bg-sky-900 text-white text-sm font-semibold rounded-md px-3 py-1 mt-4">Clear History</button>
+            </div>
+            <div id="hisList">
+                
             </div>
         </section>
     </main>
     <script src="scripts/decreaseNumber.js"></script>
+    <script src="scripts/increaseNumber.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="./scripts/history.js"></script>
 </body>
 </html>
