@@ -1,10 +1,10 @@
-function history() {
+function history(title) {
     const hisList = document.getElementById('hisList');
     const div = document.createElement('div');
     let uniqueId = `time-${Date.now()}`;
 
     div.innerHTML = `<h1 id="${uniqueId}" class="text-xs mt-4 font-semibold p-1 bg-gray-200 rounded-lg my-1 mx-1">
-                        You have completed the task Add Dark Mode at 
+                        You have completed the task ${title} at 
                     </h1>`;
 
     hisList.appendChild(div);

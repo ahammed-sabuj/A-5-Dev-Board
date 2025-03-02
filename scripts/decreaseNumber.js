@@ -13,7 +13,8 @@ document.getElementById('card-1-button').addEventListener('click', function(even
         button.disabled = true;
         button.style.backgroundColor = 'gray'; 
     }
-    history();
+    const title = document.getElementById('btn1-title').innerText
+    history(title);
 });
 document.getElementById('card-2-button').addEventListener('click', function(event) {
 
@@ -31,7 +32,8 @@ document.getElementById('card-2-button').addEventListener('click', function(even
         button.disabled = true;
         button.style.backgroundColor = 'gray'; 
     }
-    history();
+    const title = document.getElementById('btn2-title').innerText
+    history(title);
 });
 document.getElementById('card-3-button').addEventListener('click', function(event) {
     const taskNumber = document.getElementById('task-num').innerText;
@@ -48,7 +50,8 @@ document.getElementById('card-3-button').addEventListener('click', function(even
         button.disabled = true;
         button.style.backgroundColor = 'gray'; 
     }
-    history();
+    const title = document.getElementById('btn3-title').innerText
+    history(title);
 });
 document.getElementById('card-4-button').addEventListener('click', function(event) {
     const taskNumber = document.getElementById('task-num').innerText;
@@ -65,7 +68,8 @@ document.getElementById('card-4-button').addEventListener('click', function(even
         button.disabled = true;
         button.style.backgroundColor = 'gray'; 
     }
-    history();
+    const title = document.getElementById('btn4-title').innerText
+    history(title);
 });
 document.getElementById('card-5-button').addEventListener('click', function(event) {
     const taskNumber = document.getElementById('task-num').innerText;
@@ -82,7 +86,8 @@ document.getElementById('card-5-button').addEventListener('click', function(even
         button.disabled = true;
         button.style.backgroundColor = 'gray'; 
     }
-    history();
+    const title = document.getElementById('btn5-title').innerText
+    history(title);
 });
 document.getElementById('card-6-button').addEventListener('click', function(event) {
     const taskNumber = document.getElementById('task-num').innerText;
@@ -99,7 +104,8 @@ document.getElementById('card-6-button').addEventListener('click', function(even
         button.disabled = true;
         button.style.backgroundColor = 'gray'; 
     }
-    history();
+    const title = document.getElementById('btn6-title').innerText
+    history(title);
 });
 
 
